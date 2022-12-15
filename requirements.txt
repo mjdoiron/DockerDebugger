@@ -1,0 +1,4 @@
+jsonschema==4.4.0
+numpy==1.23.1
+pandas==1.4.3
+scipy==1.9.1
