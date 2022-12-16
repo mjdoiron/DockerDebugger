@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     c = jsonschema
     d = pd
 
-    message = event.get("body")
+    message = event.get("body", "Default Response: No body sent")
     return {
         'statusCode': 200,
         'body': json.dumps(message)
