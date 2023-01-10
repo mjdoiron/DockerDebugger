@@ -7,7 +7,7 @@ payload=${1:-sample.json}
 # Notice the path following the base url.  We use this for local testing as we must use "RIE" to emulate the Lambda runtime interface.
 # See the following article for more details: https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
 base_url="http://localhost:8080"
-echo ">>>> Testing post_moca_en_v83_mocatestorg method  >>>>"
+echo ">>>> Testing >>>>"
 cat "${payload}" | jq
 echo "<<<< Received <<<"
 curl -s -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' \
