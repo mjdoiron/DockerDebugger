@@ -1,0 +1,17 @@
+{
+  "name": "DockerDebugger",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dockerdebugger",
+  "workspaceFolder": "/var/task",
+"shutdownAction": "stopCompose",
+"customizations": {
+	"vscode": {
+		"extensions": [
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"ms-python.isort",
+			"christian-kohler.path-intellisense"
+		]
+	}
+}
+}
