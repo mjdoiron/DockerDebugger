@@ -3,7 +3,6 @@ import json
 # import numpy as nm
 # import jsonschema
 # import pandas as pd
-# import debugpy
 
 
 def lambda_handler(event, context):
@@ -11,9 +10,6 @@ def lambda_handler(event, context):
     # b = nm
     # c = jsonschema
     # d = pd
-
-    # debugpy.listen(('0.0.0.0', 5678))
-    # debugpy.wait_for_client()
 
     message = event.get("body", "Default Response: No body sent")
 
